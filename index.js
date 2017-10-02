@@ -90,7 +90,8 @@ var home =
         "last_update": "2017-01-27T12:04:06.172Z",
         "homeName": "Test3",
         "potential_status": "Confirmed"
-    }, {
+    },
+        {
         "_id": "58873bae28f4bf912185591a",
         "id": "TEST HOME 1",
         "rooms": [{
@@ -440,20 +441,29 @@ function getHomeNames() {
 }
 
 function searchHome( id ) {
-    // return home.filter(function(item){
-    //     return item._id === id;
-    // })[0] || -1;
+   /* return home.filter(function(item){
+        return item._id === id;
+    })[0] || -1;*/
 
-    var elem;
+    var elem = -1;
+
+    // [1,2,3,4,5,6];  4;
 
     home.forEach(function (item) {
         if( item._id === id ) elem = item;
-        else elem = -1;
     });
 
     return elem;
-
 }
+
+document.addEventListener( 'DOMContentLoaded', function () {
+    document.querySelector('select[id="count"]').onchange = changeOption;
+} );
+
+function changeOption( event ) {
+    alert( event.target.innerText );
+}
+
 
 
 
