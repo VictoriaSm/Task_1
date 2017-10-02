@@ -432,40 +432,22 @@ var home =
         "potential_status": "Confirmed"
     }];
 
-var homeNames = [];
 
-function getHomeNames( arr ) {
-    for ( var i = 0; i < arr.length; i++ ) {
-        homeNames[i] = arr[i]["homeName"];
-    }
-    console.log( homeNames );
+function getHomeNames() {
+    return home.map(function(item){
+        return item.homeName;
+    });
 }
 
-getHomeNames( home );
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('select[name="count"]').onchange = changeEventHandler;
+    document.querySelector('select[name="count"]').onchange = changeEvent;
 }, false);
 
-function changeEventHandler( event ) {
+function changeEvent( event ) {
     alert( event.target.value);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
