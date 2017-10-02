@@ -455,14 +455,6 @@ function searchHome( id ) {
 
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('select[name="count"]').onchange = changeEvent;
-}, false);
-
-function changeEvent( event ) {
-    alert( event.target.value);
-}
-
 
 
 
