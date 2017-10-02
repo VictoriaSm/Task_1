@@ -439,7 +439,21 @@ function getHomeNames() {
     });
 }
 
+function searchHome( id ) {
+    // return home.filter(function(item){
+    //     return item._id === id;
+    // })[0] || -1;
 
+    var elem;
+
+    home.forEach(function (item) {
+        if( item._id === id ) elem = item;
+        else elem = -1;
+    });
+
+    return elem;
+
+}
 
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('select[name="count"]').onchange = changeEvent;
@@ -448,6 +462,21 @@ document.addEventListener('DOMContentLoaded', function() {
 function changeEvent( event ) {
     alert( event.target.value);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
