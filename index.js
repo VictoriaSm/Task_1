@@ -447,8 +447,6 @@ function searchHome( id ) {
 
     var elem = -1;
 
-    // [1,2,3,4,5,6];  4;
-
     home.forEach(function (item) {
         if( item._id === id ) elem = item;
     });
