@@ -457,7 +457,7 @@ function searchHome( id ) {
 }
 
 document.addEventListener( 'DOMContentLoaded', function () {
-    document.querySelector('select[id="count"]').onchange = changeOption;
+    document.getElementById('count').onchange = changeOption;
 } );
 
 function changeOption( event ) {
