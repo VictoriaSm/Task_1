@@ -1,3 +1,32 @@
+
+function getHomeNames() {
+    return home.map(function(item){
+        return item.homeName;
+    });
+}
+
+function searchHome( id ) {
+   /* return home.filter(function(item){
+        return item._id === id;
+    })[0] || -1;*/
+
+    var elem = -1;
+
+    home.forEach(function (item) {
+        if( item._id === id ) elem = item;
+    });
+
+    return elem;
+}
+
+var counting = document.getElementById('count');
+
+counting.onclick = function ( event ) {
+    var index = event.target.selectedIndex;
+
+    alert( event.target[index].innerHTML );
+};
+
 var home =
     [{
         "_id": "58873bae28f4bf912185591b",
@@ -432,64 +461,3 @@ var home =
         "homeName": "Test3",
         "potential_status": "Confirmed"
     }];
-
-
-function getHomeNames() {
-    return home.map(function(item){
-        return item.homeName;
-    });
-}
-
-function searchHome( id ) {
-   /* return home.filter(function(item){
-        return item._id === id;
-    })[0] || -1;*/
-
-    var elem = -1;
-
-    home.forEach(function (item) {
-        if( item._id === id ) elem = item;
-    });
-
-    return elem;
-}
-
-var counting = document.getElementById('count');
-
-counting.onclick = function ( event ) {
-    var index = event.target.selectedIndex;
-
-    alert( event.target[index].innerHTML );
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
