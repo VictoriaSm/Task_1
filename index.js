@@ -454,13 +454,13 @@ function searchHome( id ) {
     return elem;
 }
 
-document.addEventListener( 'DOMContentLoaded', function () {
-    document.getElementById('count').onchange = changeOption;
-} );
+var counting = document.getElementById('count');
 
-function changeOption( event ) {
-    alert( event.target.innerText );
-}
+counting.onclick = function ( event ) {
+    var index = event.target.selectedIndex;
+
+    alert( event.target[index].innerHTML );
+};
 
 
 
