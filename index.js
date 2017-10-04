@@ -1,14 +1,15 @@
-
+/*Task 1.1*/
 function getHomeNames() {
     return home.map(function(item){
         return item.homeName;
     });
 }
 
+/*Task 1.2*/
 function searchHome( id ) {
-   /* return home.filter(function(item){
-        return item._id === id;
-    })[0] || -1;*/
+    /* return home.filter(function(item){
+         return item._id === id;
+     })[0] || -1;*/
 
     var elem = -1;
 
@@ -19,6 +20,7 @@ function searchHome( id ) {
     return elem;
 }
 
+/*Task 2*/
 var counting = document.getElementById('count');
 
 counting.onclick = function ( event ) {
