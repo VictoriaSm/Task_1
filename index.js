@@ -30,6 +30,15 @@ counting.onclick = function ( event ) {
 };
 
 /*Task 3*/
+function addElement() {
+    var addNum = document.getElementById('count');
+    var option = document.createElement('option');
+
+    option.text = document.getElementById('numb').value;
+    addNum.add(option);
+
+    document.getElementById('numb').value = '';
+}
 
 
 
