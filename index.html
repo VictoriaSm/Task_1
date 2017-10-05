@@ -7,15 +7,32 @@
 
 </head>
 <body>
+<div class="homes">
+    <div>
+        <label>Home</label>
+        <div>
+            <select id="count"></select>
+        </div>
+    </div>
 
-<div>
-    <select id="count">
-        <option value="one">One</option>
-        <option value="two">Two</option>
-        <option value="three">Three</option>
-    </select>
+    <div class="editing">
+        <label>Add home</label>
+        <div>
+            <input type="text" id="addHomeName" value="">
+            <button onclick="addElement()">Add option</button>
+        </div>
+    </div>
+
+    <div class="editing">
+        <label>Edit home</label>
+        <div>
+            <input type="text" id="editHomeName" placeholder="Enter the home name">
+            <button onclick="editElement()">Save</button>
+        </div>
+    </div>
 </div>
 
+<script src="homekit.vanilla_tools.js"></script>
 <script src="index.js"></script>
 </body>
 </html>

@@ -1,39 +1,3 @@
-/*Task 1.1*/
-function getHomeNames() {
-    return home.map(function(item){
-        return item.homeName;
-    });
-}
-
-/*Task 1.2*/
-function searchHome( id ) {
-    /* return home.filter(function(item){
-         return item._id === id;
-     })[0] || -1;*/
-
-    var elem = -1;
-
-    home.forEach(function (item) {
-        if( item._id === id ) elem = item;
-    });
-
-    return elem;
-}
-
-/*Task 2*/
-var counting = document.getElementById('count');
-
-counting.onclick = function ( event ) {
-    var index = event.target.selectedIndex;
-
-    alert( event.target[index].innerHTML );
-};
-
-/*Task 3*/
-
-
-
-
 var home =
     [{
         "_id": "58873bae28f4bf912185591b",
@@ -128,139 +92,139 @@ var home =
         "potential_status": "Confirmed"
     },
         {
-        "_id": "58873bae28f4bf912185591a",
-        "id": "TEST HOME 1",
-        "rooms": [{
-            "accessories": [{
-                "accessoryName": "My Accessory",
-                "id": "7B63C138-D52B-552E-8824-975436F9BEC8",
-                "services": [{
-                    "id": "8F10D9EB-8527-5C06-9D3D-90620B5B8BA6",
-                    "serviceName": "GL100",
-                    "characteristics": [{
-                        "potential_status": "Confirmed",
-                        "id": "082C3485-1378-595C-A97F-90E9F5B62099",
-                        "accessType": "readable",
-                        "characteristicName": "Lock Mechanism Current State (Read Only)",
-                        "maximumValue": "3",
-                        "characteristicType": "isLabel",
-                        "characteristicValue": "Secured"
+            "_id": "58873bae28f4bf912185591a",
+            "id": "TEST HOME 1",
+            "rooms": [{
+                "accessories": [{
+                    "accessoryName": "My Accessory",
+                    "id": "7B63C138-D52B-552E-8824-975436F9BEC8",
+                    "services": [{
+                        "id": "8F10D9EB-8527-5C06-9D3D-90620B5B8BA6",
+                        "serviceName": "GL100",
+                        "characteristics": [{
+                            "potential_status": "Confirmed",
+                            "id": "082C3485-1378-595C-A97F-90E9F5B62099",
+                            "accessType": "readable",
+                            "characteristicName": "Lock Mechanism Current State (Read Only)",
+                            "maximumValue": "3",
+                            "characteristicType": "isLabel",
+                            "characteristicValue": "Secured"
+                        }, {
+                            "potential_value": 1,
+                            "potential_status": "Need to IOS confirmation",
+                            "id": "EBC5D0C7-C970-5951-85DD-C940B26499A8",
+                            "accessType": "writable&readable",
+                            "characteristicName": "Lock Mechanism Target State",
+                            "maximumValue": "1",
+                            "characteristicType": "hasPredeterminedValueDescriptions",
+                            "characteristicValue": 0
+                        }, {
+                            "id": "2A390E83-657E-596C-874F-5C43EA87103C",
+                            "accessType": "readable",
+                            "characteristicName": "Name (Read Only)",
+                            "characteristicType": "isLabel",
+                            "characteristicValue": "lock_mechanism"
+                        }]
                     }, {
-                        "potential_value": 1,
-                        "potential_status": "Need to IOS confirmation",
-                        "id": "EBC5D0C7-C970-5951-85DD-C940B26499A8",
-                        "accessType": "writable&readable",
-                        "characteristicName": "Lock Mechanism Target State",
-                        "maximumValue": "1",
-                        "characteristicType": "hasPredeterminedValueDescriptions",
-                        "characteristicValue": 0
-                    }, {
-                        "id": "2A390E83-657E-596C-874F-5C43EA87103C",
-                        "accessType": "readable",
-                        "characteristicName": "Name (Read Only)",
-                        "characteristicType": "isLabel",
-                        "characteristicValue": "lock_mechanism"
+                        "characteristics": [{
+                            "accessType": "readable",
+                            "id": "C9EE8868-9825-5E9D-AAF0-6F5CE3B83CFF",
+                            "characteristicName": "Name (Read Only]",
+                            "characteristicType": "isLabel",
+                            "characteristicValue": "Lock Management 90"
+                        }, {
+                            "accessType": "writable",
+                            "id": "0136EF08-7D67-5774-B967-9B39148A3BD9",
+                            "characteristicName": "Lock Management Control Point (Write Only]",
+                            "characteristicValue": "No value"
+                        }, {
+                            "potential_status": "Need to IOS confirmation",
+                            "potential_value": "Secured",
+                            "id": "E3B2CAC7-50D0-5B57-A44D-4BAC8602F1EA",
+                            "accessType": "writable&readable",
+                            "characteristicName": "Lock Mechanism Target State",
+                            "maximumValue": "1",
+                            "characteristicType": "hasPredeterminedValueDescriptions",
+                            "characteristicValue": "Secured"
+                        }, {
+                            "accessType": "readable",
+                            "id": "47A68481-E76B-5EF6-B444-4E39D2979690",
+                            "characteristicName": "Version [Read Only]",
+                            "characteristicType": "isLabel",
+                            "characteristicValue": ""
+                        }, {
+                            "accessType": "readable",
+                            "id": "A9E25292-1FA7-56DA-86F7-1BBA5CD02961",
+                            "characteristicName": "Logs [Read Only]",
+                            "characteristicType": "isLabel",
+                            "characteristicValue": "<000100>"
+                        }, {
+                            "accessType": "writable&readable",
+                            "id": "8022B31C-6555-5FCA-A747-EC0ED7CDDBF9",
+                            "characteristicName": "Audio Feedback",
+                            "characteristicType": " ",
+                            "characteristicValue": "No"
+                        }, {
+                            "accessType": "writable&readable",
+                            "id": "0E94735D-C2F3-56B7-ADB0-B69B77E966E0",
+                            "characteristicName": "Lock Management Auto Security Timeout",
+                            "characteristicType": "isNumeric",
+                            "characteristicValue": 50182,
+                            "maximumValue": 86400
+                        }, {
+                            "potential_status": "Need to IOS confirmation",
+                            "potential_value": "Yes",
+                            "accessType": "writable&readable",
+                            "id": "977C3E7E-4D09-596F-9303-ECCE614532BB",
+                            "characteristicName": "Administrator Only Access",
+                            "characteristicType": "isBoolean",
+                            "characteristicValue": "Yes"
+                        }, {
+                            "accessType": "readable",
+                            "id": "AAC1773D-CDCD-592E-A113-A393169CA03A",
+                            "characteristicName": "Lock Mechanism Last Known Action (Read Only]",
+                            "characteristicType": "isLabel",
+                            "characteristicValue": "Interior Secured",
+                            "maximumValue": 8
+                        }, {
+                            "accessType": "readable",
+                            "id": "417DB275-B05E-5D0F-AF26-83DD834747EB",
+                            "characteristicName": "Current Door State (Read Only]",
+                            "characteristicType": "isLabel",
+                            "characteristicValue": "Open",
+                            "maximumValue": 4
+                        }, {
+                            "accessType": "readable",
+                            "id": "EC276130-A71E-5F34-AE61-E018F417A395",
+                            "characteristicName": "Motion Detected (Read Only]",
+                            "characteristicType": "isLabel",
+                            "characteristicValue": "No"
+                        }], "id": "3440B460-77F3-55DB-9DAC-DB94A034F5FE", "serviceName": "Lock Management 90"
                     }]
-                }, {
-                    "characteristics": [{
-                        "accessType": "readable",
-                        "id": "C9EE8868-9825-5E9D-AAF0-6F5CE3B83CFF",
-                        "characteristicName": "Name (Read Only]",
-                        "characteristicType": "isLabel",
-                        "characteristicValue": "Lock Management 90"
-                    }, {
-                        "accessType": "writable",
-                        "id": "0136EF08-7D67-5774-B967-9B39148A3BD9",
-                        "characteristicName": "Lock Management Control Point (Write Only]",
-                        "characteristicValue": "No value"
-                    }, {
-                        "potential_status": "Need to IOS confirmation",
-                        "potential_value": "Secured",
-                        "id": "E3B2CAC7-50D0-5B57-A44D-4BAC8602F1EA",
-                        "accessType": "writable&readable",
-                        "characteristicName": "Lock Mechanism Target State",
-                        "maximumValue": "1",
-                        "characteristicType": "hasPredeterminedValueDescriptions",
-                        "characteristicValue": "Secured"
-                    }, {
-                        "accessType": "readable",
-                        "id": "47A68481-E76B-5EF6-B444-4E39D2979690",
-                        "characteristicName": "Version [Read Only]",
-                        "characteristicType": "isLabel",
-                        "characteristicValue": ""
-                    }, {
-                        "accessType": "readable",
-                        "id": "A9E25292-1FA7-56DA-86F7-1BBA5CD02961",
-                        "characteristicName": "Logs [Read Only]",
-                        "characteristicType": "isLabel",
-                        "characteristicValue": "<000100>"
-                    }, {
-                        "accessType": "writable&readable",
-                        "id": "8022B31C-6555-5FCA-A747-EC0ED7CDDBF9",
-                        "characteristicName": "Audio Feedback",
-                        "characteristicType": " ",
-                        "characteristicValue": "No"
-                    }, {
-                        "accessType": "writable&readable",
-                        "id": "0E94735D-C2F3-56B7-ADB0-B69B77E966E0",
-                        "characteristicName": "Lock Management Auto Security Timeout",
-                        "characteristicType": "isNumeric",
-                        "characteristicValue": 50182,
-                        "maximumValue": 86400
-                    }, {
-                        "potential_status": "Need to IOS confirmation",
-                        "potential_value": "Yes",
-                        "accessType": "writable&readable",
-                        "id": "977C3E7E-4D09-596F-9303-ECCE614532BB",
-                        "characteristicName": "Administrator Only Access",
-                        "characteristicType": "isBoolean",
-                        "characteristicValue": "Yes"
-                    }, {
-                        "accessType": "readable",
-                        "id": "AAC1773D-CDCD-592E-A113-A393169CA03A",
-                        "characteristicName": "Lock Mechanism Last Known Action (Read Only]",
-                        "characteristicType": "isLabel",
-                        "characteristicValue": "Interior Secured",
-                        "maximumValue": 8
-                    }, {
-                        "accessType": "readable",
-                        "id": "417DB275-B05E-5D0F-AF26-83DD834747EB",
-                        "characteristicName": "Current Door State (Read Only]",
-                        "characteristicType": "isLabel",
-                        "characteristicValue": "Open",
-                        "maximumValue": 4
-                    }, {
-                        "accessType": "readable",
-                        "id": "EC276130-A71E-5F34-AE61-E018F417A395",
-                        "characteristicName": "Motion Detected (Read Only]",
-                        "characteristicType": "isLabel",
-                        "characteristicValue": "No"
-                    }], "id": "3440B460-77F3-55DB-9DAC-DB94A034F5FE", "serviceName": "Lock Management 90"
-                }]
-            }, {"services": [], "id": "7b146e68-028c-7e88-8f23-35d9a09f8d22", "accessoryName": "MyAcs"}],
-            "id": "CC7C929D-D0AE-5939-AD7E-02AC059F556C",
-            "roomName": "Room"
-        }, {
-            "accessories": [{
-                "services": [],
-                "id": "e4e23ad6-0aec-4998-3251-d90ddf6d0a8c",
-                "accessoryName": "acs"
+                }, {"services": [], "id": "7b146e68-028c-7e88-8f23-35d9a09f8d22", "accessoryName": "MyAcs"}],
+                "id": "CC7C929D-D0AE-5939-AD7E-02AC059F556C",
+                "roomName": "Room"
             }, {
-                "services": [],
-                "id": "44e6b532-9a70-2df9-017b-51800568d91c",
-                "accessoryName": "csasd"
-            }, {"services": [], "id": "17cbf126-08df-0c2a-b87d-770e2ec51767", "accessoryName": "adcas"}],
-            "id": "5db61831-e4d6-de9b-478e-d0429c0b4805",
-            "roomName": "My Rooom"
-        }],
-        "updateBy": "58749290b63a88a048c327ce",
-        "OwnedBy": "58749290b63a88a048c327ce",
-        "__v": 0,
-        "Createdate": "2017-01-24T11:34:06.862Z",
-        "last_update": "2017-01-27T12:03:53.698Z",
-        "homeName": "New TEST",
-        "potential_status": "Confirmed"
-    }, {
+                "accessories": [{
+                    "services": [],
+                    "id": "e4e23ad6-0aec-4998-3251-d90ddf6d0a8c",
+                    "accessoryName": "acs"
+                }, {
+                    "services": [],
+                    "id": "44e6b532-9a70-2df9-017b-51800568d91c",
+                    "accessoryName": "csasd"
+                }, {"services": [], "id": "17cbf126-08df-0c2a-b87d-770e2ec51767", "accessoryName": "adcas"}],
+                "id": "5db61831-e4d6-de9b-478e-d0429c0b4805",
+                "roomName": "My Rooom"
+            }],
+            "updateBy": "58749290b63a88a048c327ce",
+            "OwnedBy": "58749290b63a88a048c327ce",
+            "__v": 0,
+            "Createdate": "2017-01-24T11:34:06.862Z",
+            "last_update": "2017-01-27T12:03:53.698Z",
+            "homeName": "New TEST",
+            "potential_status": "Confirmed"
+        }, {
         "_id": "588755f714927e0d38856405",
         "id": "TEST HOME 3",
         "rooms": [{
@@ -468,3 +432,71 @@ var home =
         "homeName": "Test3",
         "potential_status": "Confirmed"
     }];
+
+/*Task 1.1*/
+function getHomeNames( arrHome ) {
+    return arrHome.map(function(item){
+        return item.homeName;
+    });
+}
+
+/*Task 1.2*/
+function searchHome( id ) {
+    /* return home.filter(function(item){
+         return item._id === id;
+     })[0] || -1;*/
+
+    var elem = -1;
+
+    home.forEach(function (item) {
+        if( item._id === id ) elem = item;
+    });
+
+    return elem;
+}
+
+/*Task 2 --> Task 5*/
+var select = document.getElementById('count');
+var inputEdit = document.getElementById('editHomeName');
+
+select.addEventListener("click", function ( event ) {
+    var index = event.target.selectedIndex;
+
+    inputEdit.value = event.target[index].innerHTML;
+
+    /*Task 2
+    alert( event.target[index].innerHTML );*/
+});
+
+
+/*Task 3*/
+function addElement() {
+    var option = document.createElement('option');
+    var inputAdd = document.getElementById('addHomeName');
+    option.text = inputAdd.value;
+    select.appendChild(option);
+
+    inputAdd.value = '';
+}
+
+/*Task 4*/
+var homes = getHomeNames( home );
+
+homes.forEach(function (item) {
+    var option = document.createElement('option');
+    option.value = item;
+    option.innerHTML = item;
+    select.appendChild(option);
+});
+
+/*Task 5*/
+function editElement() {
+    var textOption = select.options[select.selectedIndex];
+    textOption.innerHTML = inputEdit.value;
+}
+
+
+
+
+
+
