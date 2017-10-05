@@ -64,7 +64,7 @@ var btnEdit = document.querySelector('.btn-edit');
 btnEdit.addEventListener( 'click', function() {
     var textOption = select.options[select.selectedIndex];
 
-    if ( inputEdit.value == '' || inputEdit.value.replace(/\s/g,'') == '' ) {
+    if ( inputEdit.value == '' || inputEdit.value.replace(/\s/g,'') == '' || inputEdit.value.length < 3 ) {
         inputEdit.classList.add('error');
         btnEdit.classList.add('error');
     }
