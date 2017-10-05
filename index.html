@@ -2,37 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
 
 </head>
 <body>
-<div class="homes">
-    <div>
-        <label>Home</label>
-        <div>
-            <select id="count"></select>
-        </div>
-    </div>
 
-    <div class="editing">
-        <label>Add home</label>
-        <div>
-            <input type="text" id="addHomeName" value="">
-            <button onclick="addElement()">Add option</button>
+<div class="container">
+    <form>
+        <div class="row">
+            <div class="col-md-3">
+                <label for="count">Home</label>
+                <div>
+                    <select id="count" class="form-control" ></select>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <div class="editing">
-        <label>Edit home</label>
-        <div>
-            <input type="text" id="editHomeName" placeholder="Enter the home name">
-            <button onclick="editElement()">Save</button>
+        <div class="row">
+            <div class="col-md-3">
+                <label for="addHomeName">Add home</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="addHomeName">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default btn-add" type="button">Add home</button>
+                    </span>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <label for="editHomeName">Edit home</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="editHomeName" placeholder="Enter the home name">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default btn-edit" type="button">Save</button>
+                    </span>
+                </div>
+            </div>
         </div>
-    </div>
+    </form>
 </div>
 
-<script src="homekit.vanilla_tools.js"></script>
-<script src="index.js"></script>
+<script src="assets/js/homekit.vanilla_tools.js"></script>
+<script src="assets/js/homes.js"></script>
+<script src="assets/js/scripts.js"></script>
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
