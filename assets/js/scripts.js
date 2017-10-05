@@ -68,7 +68,10 @@ btnEdit.addEventListener( 'click', function() {
         inputEdit.classList.add('error');
         btnEdit.classList.add('error');
     }
-    else textOption.innerHTML = inputEdit.value.trim();
+    else {
+        textOption.innerHTML = inputEdit.value.trim();
+        inputEdit.value = textOption.innerHTML;
+    }
 });
 
 
