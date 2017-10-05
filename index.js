@@ -29,8 +29,6 @@ counting.onclick = function ( event ) {
     alert( event.target[index].innerHTML );
 };
 
-/*Task 3*/
-
 
 
 
