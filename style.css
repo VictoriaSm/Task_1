@@ -41,3 +41,19 @@ input {
     border: 1px solid #ccc;
     padding: 6px 12px;
 }
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.editing {
+    margin-top: 20px;
+}
+
+.homes {
+    width: 350px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
